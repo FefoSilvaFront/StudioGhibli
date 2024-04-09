@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Declarando variáveis CSS */
+    --cor-primaria: #FFFFFF;
+    --cor-secundaria: #f1a5b1;
+    --cor-terciaria: #0B0A0A;
+
+    --font-primaria: "Archivo", sans-serif;
+    --font-secundaria: "Andada Pro", serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    box-sizing: border-box;
+    background-image: url('./img/background.png');
+    background-size: cover;
+}
+
+.container_cabecalho {
+    display: flex;
+    justify-content: space-evenly;
+}

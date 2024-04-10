@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
     /* Declarando variáveis CSS */
@@ -8,7 +10,9 @@
     --cor-terciaria: #0B0A0A;
 
     --font-primaria: "Archivo", sans-serif;
-    --font-secundaria: "Andada Pro", serif;
+    --font-secundaria: "Roboto", sans-serif;
+    --font-terciaria: "Andada Pro", serif;
+    --font-quartenaria: "Open Sans", sans-serif;
 }
 
 * {
@@ -16,13 +20,104 @@
     padding: 0px;
 }
 
-body {
-    box-sizing: border-box;
+html, body {
+    height: 100%;
     background-image: url('./img/background.png');
     background-size: cover;
 }
 
 .container_cabecalho {
     display: flex;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+}
+
+.cabecalho_links {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho_links > a > img {
+    width: 40px;
+}
+
+.container_principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_conteudo {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.9fr 1fr;
+}
+
+.conteudo_texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 18rem;
+    height: 400px;
+}
+
+main > section > div > span {
+    font-family: var(--font-quartenaria);
+    color: var(--cor-primaria);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: -2.5rem;
+}
+
+h1 {
+    font-family: var(--font-terciaria);
+    color: var(--cor-primaria);
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
+p {
+    font-family: var(--font-primaria);
+    color: var(--cor-primaria);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.conteudo_links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo_links > a {
+    display: flex;
+    align-items: center;
     justify-content: space-evenly;
+    width: 40%;
+    padding: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: var(--font-secundaria);
+}
+
+.botao_play {
+    border-radius: 4px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+}
+
+.botao_trailer {
+    border: 2px var(--cor-secundaria) solid;
+    border-radius: 4px;
+    color: var(--cor-primaria);
+}
+
+.rodape {
+    color: var(--cor-primaria);
+    padding: 2% 0 0 0;
+    font-family: var(--font-quartenaria);
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: center;
 }

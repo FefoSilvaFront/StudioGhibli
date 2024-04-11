@@ -113,6 +113,25 @@ p {
     color: var(--cor-primaria);
 }
 
+.img_chihiro {
+    transform: translateY(0px);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 .rodape {
     color: var(--cor-primaria);
     padding: 2% 0 0 0;
@@ -120,4 +139,40 @@ p {
     font-size: 0.9rem;
     font-weight: 400;
     text-align: center;
+}
+
+/* ========================= */
+
+@media (max-width: 1280px) {
+    .container_conteudo {
+        display: flex;
+        flex-direction: column-reverse; 
+    }
+
+    .img_chihiro {
+        width: 24rem;
+    }
+
+    .conteudo_texto {
+        margin-left: 2rem;
+        justify-content: space-evenly;
+        height: 18rem;
+    }
+
+    .conteudo_links {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .rodape {
+        padding: 1% 0 1% 0;
+    }
+}
+
+@media (max-width: 686px) {
+    .conteudo_texto {
+        margin: 0 1rem 0 1rem;
+        justify-content: space-evenly;
+        height: 24rem;
+    }
 }

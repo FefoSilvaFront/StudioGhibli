@@ -154,9 +154,8 @@ p {
     }
 
     .conteudo_texto {
-        margin-left: 2rem;
+        margin-left: 1%;
         justify-content: space-evenly;
-        height: 21rem;
     }
 
     .conteudo_links {

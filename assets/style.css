@@ -153,6 +153,10 @@ p {
         width: 24rem;
     }
 
+    .container_conteudo {
+        width: 100%;
+    }
+
     .conteudo_texto {
         margin-left: 1%;
         justify-content: space-evenly;
@@ -165,6 +169,14 @@ p {
 
     .rodape {
         padding: 1% 0 1% 0;
+    }
+
+    .logo_ghibli {
+        width: 26%;
+    }
+
+    .contato_img {
+        width: 26%;
     }
 }
 

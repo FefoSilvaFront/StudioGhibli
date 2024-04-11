@@ -169,10 +169,10 @@ p {
     }
 }
 
-@media (max-width: 650px) {
+/* @media (max-width: 600px) {
     .conteudo_texto {
         margin: 0 1rem 0 1rem;
         justify-content: space-evenly;
         height: 24rem;
     }
-}
+} */
